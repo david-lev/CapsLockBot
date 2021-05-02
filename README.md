@@ -26,7 +26,6 @@ bot_token = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 [telegram]
 bot_username = YourBotUsername (Without @)
-
 ```
 the ``api_id`` & ``api_hash`` You can get from [my.telegram.org](https://my.telegram.org).
 ``bot_token`` & ``bot_username`` you can get by create new bot on [BotFather](https://t.me/BotFather).
