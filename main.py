@@ -46,7 +46,7 @@ caps = {
 
 
 #  replay filters
-@app.on_message(filters.group & filters.reply & filters.command(["caps", f"caps@{bot_username}"]))
+@app.on_message(filters.reply & filters.command(["caps", f"caps@{bot_username}"]))
 def main(_, msg: types.Message):
     gib_msg = msg.reply_to_message
     gib = gib_msg.text.lower()
