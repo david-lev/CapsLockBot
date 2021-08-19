@@ -4,9 +4,11 @@
 
 ### Telegram bot to convert capslock messages to their real language.
 
-Everyone is probably familiar with the situation in which a message is sent and finds that CapsLock mode was turned on when typing and now the message appears in capital letters in English instead of the original language. The next bot solves the problem. add the bot to the group, replay to each 'CapsLock message' with the command ```/caps``` and the bot will respond with the corrected message.
+Everyone is probably familiar with the situation which a message is sent and finds that CapsLock mode was activated when typing and now the message appears in capital letters in English instead of the source language. The following bot solves this problem:
+- Edit the 'capslock-message' and first type the bot user to go inline with the original message. Click on the window that will appear and you will receive the translated message.
+- The bot is adapted for working in groups without the need to edit the message. Add the bot to the group with delted messages permission, replay to each 'CapsLock message' with the command `/caps` and the bot will respond with the converted message.
 
-_You can check our bot [here](https://t.me/CapslockHEbot) (in Hebrew)._
+_You can check our bot [here](https://t.me/CapslockHEbot) (in Hebrew )._
 
 ## configuration:
 - Clone this reposetory:
