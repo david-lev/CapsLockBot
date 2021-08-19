@@ -8,7 +8,7 @@ Everyone is probably familiar with the situation which a message is sent and fin
 - Edit the 'capslock-message' and first type the bot user to go inline with the original message. Click on the window that will appear and you will receive the translated message.
 - The bot is adapted for working in groups without the need to edit the message. Add the bot to the group with delted messages permission, replay to each 'CapsLock message' with the command `/caps` and the bot will respond with the converted message.
 
-_You can check our bot [here](https://t.me/CapslockHEbot) (in Hebrew )._
+> You can check our bot [here](https://t.me/CapslockHEbot) (in Hebrew).
 
 ## configuration:
 - Clone this reposetory:
