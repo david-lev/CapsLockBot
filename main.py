@@ -7,7 +7,7 @@ bot_username = config.get("telegram", "bot_username")
 
 app = Client("capslock")
 
-#  convert capslock chars to your language (hebrew in this case):
+# convert capslock chars to your language (hebrew in this case):
 caps = {
     "q": "/",
     "w": "'",
@@ -57,7 +57,7 @@ def convert(caps_str: str) -> str:
     return new_str
 
 
-#  Group
+# Convert caps messages inside groups
 @app.on_message(filters.group & filters.reply & filters.command(["caps", f"caps@{bot_username}"]))
 def main(_, msg: types.Message):
     msg.reply(convert(msg.reply_to_message.text))
@@ -68,12 +68,19 @@ def main(_, msg: types.Message):
         pass
 
 
-# Private
-@app.on_message(filters.private & ~filters.command("start"))
+# The caps command in private chats
+@app.on_message(filters.private & filters.command("caps"))
+def private(_, msg: types.Message):
+    msg.reply("This command is for group use only, in replay to a message.")
+
+
+# Convert caps messages in private chats
+@app.on_message(filters.private & ~filters.command(["start", "caps"]))
 def private(_, msg: types.Message):
     msg.reply(convert(msg.text))
 
 
+# Convert caps messages with inline mode
 @app.on_inline_query()
 def inline(_, query: types.InlineQuery):
     if not query.query:
@@ -87,7 +94,7 @@ def inline(_, query: types.InlineQuery):
     ])
 
 
-#  welcome message
+# Welcome message
 @app.on_message(filters.command("start") & filters.private)
 def start(_, msg: types.Message):
     txt = "Hi! Add me to your group and give me permission to delete messages; Respond to any 'capslock' message with " \
