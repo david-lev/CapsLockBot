@@ -20,18 +20,18 @@ strings = {
               "\n\n🎛 בוט זה נוצר על ידי [David-Lev](t.me/davidlev) && [Yeuda-By](t.me/m100achuzBots)."
     },
     "help_msg": {
-        "en": "ℹ️ **How to use:**\n\n"
-              "--• Inline mode:--\nDid you send a 'CapsLock-message' in any chat? Edit it and add the bot user - {} at "
-              "the beginning of the message and add space between them, the bot will display an Inline message "
+        "en": "📖️️ **How to use:**\n\n"
+              "--• Inline mode:--\nDid you send a 'CapsLock-message' in any chat? Edit it and add the bot user - `@{}` "
+              "at the beginning of the message and add space between them, the bot will display an Inline message "
               "showing the 'translation', click on it to send the converted message.\n\n"
               "--• Groups:--\nYou can add me to your group and give me permission to delete messages. Replay to any "
               "'capslock' message with the `/caps` command and I'll convert it into spoken language!\n\n "
               "--• Private:--\nI also work in private, send or forward any message here and I will translate it into "
               "spoken language."
               "\n\nThis bot made with ❤ by [David-Lev](t.me/davidlev) && [Yeuda-By](t.me/m100achuzBots).",
-        "he": "ℹ️ **כיצד להשתמש בבוט?**\n\n"
+        "he": "📖️️ **כיצד להשתמש בבוט?**\n\n"
               "--• מצב אינליין:--\nשלחתם הודעה מקופסלקת בכל צ'אט שהוא? ערכו את ההודעה והוסיפו את יוזר הבוט בתחילתה - "
-              "{}, השאירו רווח בין היוזר לבין ההודעה. הבוט יציג את 'התרגום' בחלונית אינליין ותוכלו ללחוץ על החלונית "
+              "`@{}`, השאירו רווח בין היוזר לבין ההודעה. הבוט יציג את 'התרגום' בחלונית אינליין ותוכלו ללחוץ על החלונית "
               "ולשלוח את ההודעה המתוקנת באותו הצ'אט.\n"
               "--• שימוש בקבוצות:--\nהוסיפו את הבוט לקבוצה ותנו לו הרשאה למחיקת הודעות. כעת הגיבו לכל הודעה "
               "'מקופסלקת' עם הפקודה `/caps` והבוט ימיר את ההודעה לעברית.\n"
