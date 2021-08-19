@@ -2,50 +2,13 @@ import json
 
 from pyrogram import Client, filters, types
 import configparser
-from strings import lang_msg
+from strings import lang_msg, caps
 
 config = configparser.ConfigParser()
 config.read('config.ini')
 bot_username = config.get("telegram", "bot_username")
 
 app = Client("capslock")
-
-# convert capslock chars to your language (hebrew in this case):
-caps = {
-    "q": "/",
-    "w": "'",
-    "e": "ק",
-    "r": "ר",
-    "t": "א",
-    "y": "ט",
-    "u": "ו",
-    "i": "ן",
-    "o": "ם",
-    "p": "פ",
-    "a": "ש",
-    "s": "ד",
-    "d": "ג",
-    "f": "כ",
-    "g": "ע",
-    "h": "י",
-    "j": "ח",
-    "k": "ל",
-    "l": "ך",
-    "z": "ז",
-    "x": "ס",
-    "c": "ב",
-    "v": "ה",
-    "b": "נ",
-    "n": "מ",
-    "m": "צ",
-    ",": "ת",
-    ".": "ץ",
-    "/": ".",
-    ";": "ף",
-    "'": ",",
-    ")": "(",
-    "(": ")"
-}
 
 
 # Convert function

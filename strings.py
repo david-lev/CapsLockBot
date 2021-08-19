@@ -1,13 +1,49 @@
 from typing import Union
 from pyrogram.types import Message, InlineQuery
 
+# convert capslock chars to your language (hebrew in this case):
+caps = {
+    "q": "/",
+    "w": "'",
+    "e": "ק",
+    "r": "ר",
+    "t": "א",
+    "y": "ט",
+    "u": "ו",
+    "i": "ן",
+    "o": "ם",
+    "p": "פ",
+    "a": "ש",
+    "s": "ד",
+    "d": "ג",
+    "f": "כ",
+    "g": "ע",
+    "h": "י",
+    "j": "ח",
+    "k": "ל",
+    "l": "ך",
+    "z": "ז",
+    "x": "ס",
+    "c": "ב",
+    "v": "ה",
+    "b": "נ",
+    "n": "מ",
+    "m": "צ",
+    ",": "ת",
+    ".": "ץ",
+    "/": ".",
+    ";": "ף",
+    "'": ",",
+    ")": "(",
+    "(": ")"
+}
+
 # Here you can add your language strings. just add on every dict new key with your language code and insert the value.
 # keep you're mind that languages are displayed accordingly to your client (app, software) lang.
-
 strings = {
     "caps_private": {
         "en": "❌ This command is for group use only, in replay to a message.",
-        "he": "❌ פקודה זו ניתנת לשימוש בקבוצות בהגבה על הודעה 'מקופסלקת' בלבד"
+        "he": "❌ פקודה זו ניתנת לשימוש בקבוצות בהגבה על הודעה 'מקופסלקת' בלבד."
     },
     "start_msg": {
         "en": "Hi {}! 👋\n\n"
@@ -15,7 +51,7 @@ strings = {
               "📖️️ Send /help for more information."
               "\n\n🎛 This bot made with ❤️by [David-Lev](t.me/davidlev) && [Yeuda-By](t.me/m100achuzBots).",
         "he": "היי {}! 👋\n\n"
-              "🤖 **בוט זה מאפשר להמיר הודעות שנשלחו כשהמקלדת היתה על אנגלית או במצב קאפסלוק - לעברית.**\n\n"
+              "🤖 **בוט זה מאפשר להמיר הודעות שנשלחו כשהמקלדת היתה על אנגלית או על קאפסלוק - לעברית.**\n\n"
               "📖️ למידע נוסף שלחו /help."
               "\n\n🎛 בוט זה נוצר על ידי [David-Lev](t.me/davidlev) && [Yeuda-By](t.me/m100achuzBots)."
     },
@@ -33,9 +69,9 @@ strings = {
               "--• מצב אינליין:--\nשלחתם הודעה מקופסלקת בכל צ'אט שהוא? ערכו את ההודעה והוסיפו את יוזר הבוט בתחילתה - "
               "`@{}`, השאירו רווח בין היוזר לבין ההודעה. הבוט יציג את 'התרגום' בחלונית אינליין ותוכלו ללחוץ על החלונית "
               "ולשלוח את ההודעה המתוקנת באותו הצ'אט.\n"
-              "--• שימוש בקבוצות:--\nהוסיפו את הבוט לקבוצה ותנו לו הרשאה למחיקת הודעות. כעת הגיבו לכל הודעה "
+              "--• שימוש בקבוצות:--\nהוסיפו את הבוט לקבוצה ותנו לו הרשאה למחיקת הודעות. הגיבו לכל הודעה "
               "'מקופסלקת' עם הפקודה `/caps` והבוט ימיר את ההודעה לעברית.\n"
-              "--• צ'אט בבוט:--\nניתן לשלוח או לעביר הודעות ישירות אל הבוט ולקבל את תרגומן לעברית.\n\n"
+              "--• צ'אט בבוט:--\nניתן לשלוח או להעביר הודעות ישירות אל הבוט ולקבל את תרגומן לעברית.\n\n"
               "🎛 רובוט זה נוצר על ידי [David-Lev](t.me/davidlev) && [Yeuda-By](t.me/m100achuzBots)."
     },
     "add_to_group": {
