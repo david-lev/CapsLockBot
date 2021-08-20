@@ -2,7 +2,7 @@
 
 # CapsLockBot Converter
 
-### Telegram bot to convert capslock messages to their real language.
+### Telegram bot to convert CapsLock messages to their real language.
 
 Everyone is probably familiar with the situation which a message is sent and finds that CapsLock mode was activated when typing and now the message appears in capital letters in English instead of the source language. The following bot solves this problem:
 - Edit the 'capslock-message' and first type the bot user to go inline with the original message. Click on the window that will appear and you will receive the translated message.
@@ -11,15 +11,15 @@ Everyone is probably familiar with the situation which a message is sent and fin
 > You can check our bot [here](https://t.me/CapslockHEbot) (in Hebrew).
 
 ## configuration:
-- Clone this reposetory:
+- Clone this repository:
 ```
 git clone https://github.com/david-lev/CapsLockBot.git
 ```
-- Install requirements (``pyrogram, tgcrypto``):
+- Install requirements (``pyrogram``, ``tgcrypto``):
 ```
 pip3 install -U pyrogram tgcrypto
 ```
-- Edit and insert the folowing values into the [config](/config.ini) file:
+- Edit and insert the following values into the [config](/config.ini) file:
 ```
 [pyrogram]
 api_id = XXXXXXXXXXX
@@ -29,13 +29,12 @@ bot_token = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 [telegram]
 bot_username = YourBotUsername (Without @)
 ```
-the ``api_id`` & ``api_hash`` You can get from [my.telegram.org](https://my.telegram.org).
-``bot_token`` & ``bot_username`` you can get by create new bot on [BotFather](https://t.me/BotFather).
-- Edit the [main.py](/main.py#L11) file and change the caps values for the compatibility of your keyboard buttons.
+The ``api_id`` & ``api_hash`` You can get from [my.telegram.org](https://my.telegram.org).
+``bot_token`` & ``bot_username`` you can get by creating a new bot on [BotFather](https://t.me/BotFather).
+- Edit the [strings.py](/strings.py#5) file and change the caps values for the compatibility of your keyboard buttons.
 - Run the bot:
 ```
 python3 main.py
 ```
 ---
-![]()
 Created with ❤️ by [David Lev](https://t.me/davidlev) & [Yehuda By](https://t.me/M100achuzBots)
