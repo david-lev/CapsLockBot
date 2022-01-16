@@ -62,7 +62,10 @@ def save_uses():
 # Convert caps messages inside groups
 @app.on_message(filters.group & filters.reply & filters.command(["caps", f"caps@{bot_username}"]))
 def main(_, msg: types.Message):
-    msg.reply(convert(msg.reply_to_message.text))
+    if msg.reply_to_message.reply_to_message:
+        msg.reply_to_message.reply_to_message.reply(convert(msg.reply_to_message.text))
+    else:
+        msg.reply(convert(msg.reply_to_message.text))
     save_user(msg.from_user.id)
     #  delete the /caps command
     try:
